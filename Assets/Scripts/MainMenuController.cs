@@ -33,8 +33,8 @@ public class MainMenuController : MonoBehaviour
 
     private void SwitchWindows()
     {
-        var howPlayerGetHere = PlayerPrefs.GetInt("played", 0); 
-        // 0 - just started, 1 - just played, 2 - pressed esq
+        var howPlayerGetHere = PlayerPrefs.GetInt("played", 2); 
+        // 0 - just started, 1 - just played, 2 - pressed esq or ever played
         if (howPlayerGetHere == 0)
         {
             resultText.text = "No data";
